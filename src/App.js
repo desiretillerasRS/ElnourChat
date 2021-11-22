@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import EnterName from './EnterName';
 import Chat from './Chat';
 
+
 function App() {
 
 
@@ -25,6 +26,7 @@ function App() {
             <Route exact path="/chat">
               <Chat />
             </Route>
+
           </Switch>
 
         </div>
