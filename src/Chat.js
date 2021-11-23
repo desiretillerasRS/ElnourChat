@@ -63,11 +63,9 @@ const Chat = (props) => {
             newId = messages[messages.length - 1].id + 1;
         }
         const newMessage = { userName: userName, message: messageText};
-
         
         const message = await postData("http://localhost:4000/messages", newMessage);
 
-       // const newMessageArray = messages.filter(message => message.id);
        const newMessageArray = [...messages]
 
         newMessageArray.push(message);
