@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import EnterName from './EnterName';
 import Chat from './Chat';
 import History from './History';
-
+import About from './about';
 
 function App() {
 
@@ -29,6 +29,9 @@ function App() {
             </Route>
             <Route exact path="/history">
               <History />
+            </Route>
+            <Route exact path="/about">
+              <About/>
             </Route>
 
           </Switch>
