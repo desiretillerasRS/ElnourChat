@@ -9,11 +9,8 @@ import History from './History';
 import About from './about';
 
 function App() {
-
-
-
-  return (
-    <Router>
+    return (
+      <Router>
       <div className="App">
         <Navbar />
         <div className="content">
@@ -33,7 +30,6 @@ function App() {
             <Route exact path="/about">
               <About/>
             </Route>
-
           </Switch>
 
         </div>
